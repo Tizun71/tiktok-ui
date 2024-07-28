@@ -3,10 +3,15 @@
 
 :root {
     --primary: #fe2c55;
+    --black: #000;
+    --text-color: #333;
+
+    --font-family: 'ProximaNova', sans-serif;
 
     //Default Layout
     --default-layout-header-height: 60px;
-    --default-layout-width: 1150px;
+    --default-layout-width: 1450px;
+    --default-layout-horizontal-spacer: 24px;
 }
 
 * {
@@ -16,11 +21,24 @@
 }
 
 html {
-    font-size: 62.5%;
+    font-size: 70%;
 }
 
 body {
+    font-family: var(--font-family);
     font-size: 1.6 rem;
     line-height: 1.5;
     text-rendering: optimizeSpeed;
+}
+
+button,
+input,
+[tabindex] {
+    outline: none;
+    border: none;
+}
+
+a[href] {
+    color: var(--text-color);
+    text-decoration: none;
 }
